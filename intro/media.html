@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation HTML - CSS - JS - Les media</title>
+    <!-- A la suite les déclarations des CSS, JS, et autres -->
+</head>
+<!-- corps de la page, ce qui est affiché à l'écran -->
+<body>
+    <header>
+        <h1><a href="../">Formation HTML - CSS - JS - Les media</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <details>
+                    <summary>Introduction HTML</summary>
+                    <ul>
+                        <li>
+                            <a href="../intro/index.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="../intro/liens.html">Liens hypertextes</a>
+                        </li>
+                        <li>
+                            <a href="../intro/media.html">Media</a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <header>
+                <h2>Les media en HTML</h2>
+            </header>
+            <main>
+                <h3>Images et légendes</h3>
+                <p>
+                    <figure>
+                        <a href="../images/SheRa-Netflix-2--673x1024.jpg" target="_blank" 
+                        title="lien vers le poster du show She-ra saison 5 sur Netflix">
+                            <img src="../images/SheRa-Netflix-2--673x1024.jpg"  
+                            alt="Poster du show She-ra saison 5 sur Netflix" />
+                        </a>
+                        <figcaption>
+                            She-ra saison 5 sur Netflix
+                        </figcaption>
+                    </figure>
+                </p>
+                <p>
+                    En CSS on pourra limiter la taille (largeur ou hauteur) maximale d'affichage des images
+                </p>
+                <h3>Vidéos</h3>
+                <h4>Vidéo hébergées en local</h4>
+                <figure>
+                    <video controls preload="auto">
+                        <source src="../media/Big_Buck_Bunny_360_10s_1MB.mp4" type="video/mp4" />
+                        <source src="../media/Big_Buck_Bunny_360_10s_1MB.webm" type="video/webm" />
+                    </video>
+                    <figcaption>
+                        Vidéo démo big buck bunny pour tester la balise HTML video
+                    </figcaption>
+                </figure>
+                <p>
+                    la balise vidéo paut aussi avoir les attributs suivants :
+                </p>
+                <ul>
+                    <li>
+                        muted : la vidéo se lancera sans le son 
+                        (réactivable si et seulement sit les contrôles sont activés)
+                    </li>
+                    <li>autoplay : la vidéo se lance automatiquement à la seule condition qu'elle soit 
+                        avec l'attribut muted
+                    </li>
+                    <li>
+                        Poster : permet de mettre une image à la place 
+                        de la miniature de la première image de la vidéo
+                    </li>
+                </ul>
+                <h4>Vidéo en streaming (sources extérieurs)</h4>
+                <h5>Sur Dailymotion</h5>
+                <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                    <iframe width="100%" height="100%" 
+                    style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" 
+                    frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x80385" 
+                    allowfullscreen ></iframe>
+                </div>
+                <h5>Sur youtube</h5>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/fc5NQX2nGSY" title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                <h3>Audio</h3>
+                <h4>Audio en local</h4>
+                <h4>Audio en streaming (sources extérieurs)</h4>
+            </main>
+        </article>
+        <article>
+            <header>
+                <h2>Les listes à puces</h2>
+            </header>
+            <main>
+                <p>
+                    Les listes à puces peuvent être ordonnées ou non ordonnées<br />
+                    Les listes à puces ne doivent pas être encapsulée dans des paragraphes (p)
+                </p>
+                <h2>Listes non ordonnées</h2>
+                <ul>
+                    <li>Introduction</li>
+                    <li>Premier point</li>
+                    <li>Deuxième point</li>
+                    <ul>
+                        <li>premier sous point</li>
+                        <ul>
+                            <li>Sous sous point 1</li>
+                            <li>Sous sous point 2</li>
+                        </ul>
+                    </ul>
+                    <li>Troisième point</li>
+                    <li>Conclusion</li>
+                </ul>
+                <h2>Liste ordonnée</h2>
+                <ol>
+                    <li>Intro</li>
+                    <li>Partie</li>
+                    <ol start="3">
+                        <li>point</li>
+                        <li>point</li>
+                    </ol>
+                    <li>Point</li>
+                    <ol>
+                        <li>point</li>
+                        <li>point</li>
+                    </ol>
+                </ol>
+                <h4>Liste ordonnée inversée</h4>
+                <ol reversed>
+                    <li>Intro</li>
+                    <li>Partie</li>
+                    <ol start="3" reversed>
+                        <li>point</li>
+                        <li>point</li>
+                    </ol>
+                    <li>Point</li>
+                </ol>
+                <h4>Les listes de description</h4>
+                <p>Les cryptides des Cornouailles:</p>
+                <dl>
+                    <dt>La bête de Bodwin</dt>
+                    <dd>Un large félin vivant dans la lande de Bodwin.</dd>
+                    <dt>Morgawr</dt>
+                    <dd>Un serpent de mer.</dd>
+                    <dt>L'homme-hibou</dt>
+                    <dd>Une créature humanoïde-hibou géante.</dd>
+                    <dd>Une créature humanoïde-hibou géante.</dd>
+                </dl>
+            </main>
+        </article>
+
+        <aside>
+            <h3>En attendant</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi cumque obcaecati assumenda deleniti necessitatibus 
+                dolores voluptates? Consectetur velit qui, dolore aliquam 
+                cum quisquam quaerat odit iusto laboriosam perspiciatis cumque alias!
+            </p>
+        </aside>
+    </main>
+    <footer>
+        <section>
+            <h4>Liens utiles</h4>
+            <ul>
+                <li><a href="#">Qui sommes-nous</a></li>
+                <li><a href="#">CGU</a></li>
+                <li><a href="#">F.A.Q.</a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>Site Map</h4>
+            <ul>
+                <li>
+                    <a href="./intro/index.html">Introduction</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
