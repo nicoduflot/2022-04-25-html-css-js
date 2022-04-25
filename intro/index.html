@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formation HTML - CSS - JS - page d'accueil</title>
+    <title>Formation HTML - CSS - JS - Introduction</title>
     <!-- A la suite les déclarations des CSS, JS, et autres -->
 </head>
 <!-- corps de la page, ce qui est affiché à l'écran -->
 <body>
     <header>
-        <h1>Formation HTML - CSS - JS</h1>
+        <h1>Formation HTML - CSS - JS - Introduction</h1>
     </header>
     <nav>
         <ul>
@@ -18,7 +18,10 @@
                     <summary>Introduction HTML</summary>
                     <ul>
                         <li>
-                            <a href="./intro/index.html">Introduction</a>
+                            <a href="../intro/index.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="../intro/liens.html">Liens hypertextes</a>
                         </li>
                     </ul>
                 </details>
@@ -31,12 +34,49 @@
                 <h2>Le HTML 5 : de meilleures balises sémantiques</h2>
             </header>
             <main>
-                <h3>De l'université au monde entier</h3>
+                <h3>Le contenu texte</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Culpa inventore necessitatibus quae ullam tempore sequi 
-                    distinctio, facilis temporibus vitae non, voluptates optio 
-                    unde velit ad delectus exercitationem id qui aut.
+                    Le texte s'écrit entre des balise de paragraphe <code>&lt;p&gt;</code> et <code> &lt;/p&gt;</code>. <br />
+                    Les sauts de ligne s'écrivent avec la balise <code>&lt;br /&gt;</code>.<br />
+                    Un titre &lt;hx&gt;.
+                </p>
+                <p>
+                    Dans les normes WC, UN SEUL H1 PAR PAGE HTML, les titre vont de h1 à h6.
+                </p>
+                <h3>Différents blocs de texte</h3>
+                <p>
+                    Le paragraphe avec le balise p
+                </p>
+                <blockquote>
+                    Le blockquote est un bloc de citation
+                </blockquote>
+                <p>
+                    Il y a d'autre type de citation :
+                    <cite>
+                        Alea jacta est
+                    </cite>
+                </p>
+                <p>
+                    ou avec la balise q<br />
+                    Quand Dave demande à HAL d'ouvrir la porte du module de sortie, 
+                    HAL répond: 
+                    <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">
+                        Je suis désolé Dave, je crains que je ne puisse faire cela.
+                    </q>
+                </p>
+                <p>
+                    On peut généralement mettre en forme le texte 
+                    de la même façon qu'avec un traîtement de texte<br />
+                    La seule différence, c'est qu'il faut encapsuler le ou les 
+                    mots avec des balises pour appliquer le style désiré.<br />
+                    par exemple, du texte en <strong>gras</strong> (strong) qui appuie 
+                    sur l'importance sémantique en plus de le faire ressortir visuellement
+                    ou s'implement en <b>gras</b> (b) qui permet simplement de le faire ressortir à l'image.<br />
+                    On peut écrire en italique dans le même principe : <em>une citation importante</em> (em), 
+                    ajoute de l'emphase aux termes entourés, alors qu'une <i>citation secondaire</i> (i) 
+                    aura moins d'importancepour les moteurs de recherche.<br />
+                    IL existe aussi des <sup>exposant</sup>, on peut aussi utiliser des <sub>indices</sub>.<br />
+                    Il est aussi possible d'écrire <s>biffé</s>, <mark>surligné</mark>, <u>souligné</u>.
                 </p>
             </main>
             <footer>

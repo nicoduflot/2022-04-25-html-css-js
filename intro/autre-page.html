@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>autre page</title>
+    </head>
+    <body>
+        <header>
+            <h1>autre page</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Lien 1</a></li>
+                    <li><a href="">Lien 2</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h1>Ceci est la page cible</h1>
+                    <p>
+                        Elle est appelée en iframe dans la page liens<br />
+                        <a href="autre-page.html" target="_parent">Ouvrir la page dans le cadre parent.</a>
+                    </p>
+                    <iframe id="frameExample" 
+                            title="Frame Example" 
+                            width="300" 
+                            height="200" 
+                            src="./autre-autre-page.html"></iframe>
+                </article>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
