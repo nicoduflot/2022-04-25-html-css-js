@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation HTML - CSS - JS - Les formulaires</title>
+    <!-- A la suite les déclarations des CSS, JS, et autres -->
+</head>
+<!-- corps de la page, ce qui est affiché à l'écran -->
+<body>
+    <header>
+        <h1><a href="../">Formation HTML - CSS - JS - Les tableaux</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <details>
+                    <summary>Introduction HTML</summary>
+                    <ul>
+                        <li>
+                            <a href="../intro/index.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="../intro/liens.html">Liens hypertextes</a>
+                        </li>
+                        <li>
+                            <a href="../intro/media.html">Media</a>
+                        </li>
+                        <li>
+                            <a href="../intro/tableaux.html">Les tableaux</a>
+                        </li>
+                        <li>
+                            <a href="../intro/formulaires.html">Les formulaires</a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <header>
+                <h2>Les formulaires en HTML</h2>
+            </header>
+            <main>
+                <h3>Balise form</h3>
+                <p>
+                    Les formulaires servent à recueillir des informations.
+                </p>
+                <h3>Exemple de formulaire et d'éléments de formulaire</h3>
+                <p>
+                    Un formulaire se déclare à l'aide de la balise form.<br />
+                    Il possède des attributs, les plus importants étant la method et l'action.
+                </p>
+                <h4>Method</h4>
+                <p>
+                    Méthode d'envoi des données recueillies du formulaire vers la page de traîtement.<br />
+                    Il en existe deux : get et post. Si l'attribut method n'est pas spécifié, 
+                    il est déterminé par défaut à get.
+                </p>
+                <ul>
+                    <li>get : les données sont receuillies dans des variables ajoutée à l'url de la page de traîtement</li>
+                    <li>post : les données sont envoyées dans l'entête HTTP de la page appelée</li>
+                </ul>
+                <h4>Action</h4>
+                <p>
+                    Cible la page de traîtement des données envoyées. Si action n'est pas indiqué, 
+                    par défaut le formulaire enverra les données a traiter sur la page où il se trouve 
+                    (la page s'appelle elle-même).
+                </p>
+            </main>
+        </article>
+        <article>
+            <header>
+                <h2>Saisie du formulaire</h2>
+            </header>
+            <main>
+                <form method="get" action="./formulaires.html">
+                    <fieldset>
+                        <legend>
+                            Vos coordonnées
+                        </legend>
+                        <p>
+                            <label for="nom">Nom</label><br />
+                            <input type="text" id="nom" name="nom" 
+                            placeholder="Entrez votre nom" value="" 
+                            minlength="2" maxlength="255" autofocus required />
+                        </p>
+                        <p>
+                            <label for="prenom">Prénom</label><br />
+                            <input type="text" id="prenom" name="prenom" 
+                            placeholder="Entrez votre prénom" value="" 
+                            minlength="2" maxlength="255" />
+                        </p>
+                        <p>
+                            <label for="email">E-mail</label><br />
+                            <input type="text" id="email" name="email" 
+                            placeholder="Entrez votre E-mail" value="" required />
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Votre équipe
+                        </legend>
+                        <p>
+                            <label for="description">Décrire l'équipe</label>
+                            <textarea cols="40" rows="5" id="description" name="description"></textarea>
+                        </p>
+                        <p>
+                            <label for="englishLevel"></label>
+                            1 <input type="range" name="englishLevel" 
+                            id="englishLevel" min="1" max="20" step="0.5" value="10" /> 20
+                        </p>
+                        <p>
+                            Cochez les capacité de votre équipe (plusieurs choix possibles) :<br />
+                            <input type="checkbox" name="agilite" id="agilite" value="true" /><label for="agilite">Agilité</label><br />
+                            <input type="checkbox" name="force" id="force" value="true" /><label for="force">Force</label><br />
+                            <input type="checkbox" name="sagesse" id="sagesse" value="true" /><label for="sagesse">Sagesse</label><br />
+                            <input type="checkbox" name="intelligence" id="intelligence" value="true" /><label for="intelligence">Intelligence</label>
+                        </p>
+                        <p>
+                            Veuillez indiquer votre tranche d'âge :<br />
+                            <input type="radio" name="age" id="moins15" value="moins15" checked /><label for="moins15">Moins de 15 ans</label><br />
+                            <input type="radio" name="age" id="medium15-25" value="medium15-25" /><label for="medium15-25">15 - 25 ans</label><br />
+                            <input type="radio" name="age" id="medium25-40" value="medium25-40" /><label for="medium25-40">25 - 40 ans</label><br />
+                            <input type="radio" name="age" id="plus40" value="plus40" /><label for="plus40">40 ans ou plus</label>
+                        </p>
+                        <p>
+                            <label for="specialite">Spécialisation de l'équipe</label><br />
+                            <select name="specialite" id="specialite">
+                                <option value="" selected>Choisir une spécialité</option>
+                                <optgroup label="Agilité">
+                                    <option value="infiltration">Infiltration</option>
+                                    <option value="exfiltration">Exfiltration</option>
+                                </optgroup>
+                                <optgroup label="Force">
+                                    <option value="raid">Raid</option>
+                                </optgroup>
+                                <optgroup label="Sagesse">
+                                    <option value="espionnage">Espionnage</option>
+                                </optgroup>
+                                <optgroup label="Intelligence">
+                                    <option value="securite">Sécurité</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="couleurEquipe">Couleur de l'équipe</label><br />
+                            <input type="color" name="couleurEquipe" id="couleurEquipe" />
+                        </p>
+                        <p>
+                            <label for="dateEquipe">Date de création de l'équipe</label><br />
+                            <input type="date" name="dateEquipe" id="dateEquipe" />
+                        </p>
+                    </fieldset>
+                    <p>
+                        <button type="submit">
+                            Envoyer
+                        </button> 
+                        <button type="reset">
+                            Vider le formulaire
+                        </button>
+                    </p>
+                </form>
+            </main>
+        </article>
+        <aside>
+            <h3>En attendant</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi cumque obcaecati assumenda deleniti necessitatibus 
+                dolores voluptates? Consectetur velit qui, dolore aliquam 
+                cum quisquam quaerat odit iusto laboriosam perspiciatis cumque alias!
+            </p>
+        </aside>
+    </main>
+    <footer>
+        <section>
+            <h4>Liens utiles</h4>
+            <ul>
+                <li><a href="#">Qui sommes-nous</a></li>
+                <li><a href="#">CGU</a></li>
+                <li><a href="#">F.A.Q.</a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>Site Map</h4>
+            <ul>
+                <li>
+                    <a href="./intro/index.html">Introduction</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
