@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation HTML - CSS - JS - Liens hypertextes</title>
+    <!-- A la suite les déclarations des CSS, JS, et autres -->
+</head>
+<!-- corps de la page, ce qui est affiché à l'écran -->
+<body>
+    <header>
+        <h1><a href="../">Formation HTML - CSS - JS - Liens hypertextes</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <details>
+                    <summary>Introduction HTML</summary>
+                    <ul>
+                        <li>
+                            <a href="../intro/index.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="../intro/liens.html">Liens hypertextes</a>
+                        </li>
+                        <li>
+                            <a href="../intro/media.html">Media</a>
+                        </li>
+                        <li>
+                            <a href="../intro/tableaux.html">Les tableaux</a>
+                        </li>
+                        <li>
+                            <a href="../intro/formulaires.html">Les formulaires</a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>
+                        CSS
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="../style-css/index.html">Introduction</a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <header>
+                <h2>Les liens hypertextes</h2>
+            </header>
+            <main>
+                <h3>L'anatomie d'un hyperlien</h3>
+                <p>
+                    On peut créer des hyperliens en utilisant la balise a, qui signifie anchor (ancre).<br />
+                    Cette balise a besoin d'attributs pour définir :
+                </p>
+                <ul>
+                    <li>La ressource (Page, fichier, email, numéro de téléphone)</li>
+                    <li>La façon dont va s'ouvrir la ressource</li>
+                    <li>La relation entre lien et la source</li>
+                </ul>
+                <h2 id="attributs">Les attributs en détails</h2>
+                <h3>href</h3>
+                <p>
+                    href est l'attribut contenant la localisation de la ressource ciblée<br />
+                    href peut aussi contenir une indication au sein de la même page : ancre de page<br />
+                    L'exemple le plus répandu est le lien pour retourner en haut d'une page web.<br />
+                    href peut aussi contenir des URL spéciaux (email, téléphone, etc.)
+                </p>
+                <h3>target</h3>
+                <p>
+                    C'est la cible d'ouverture d'une ressource.
+                </p>
+                <ul>
+                    <li>_self : dans la même fenêtre (cadre), c'est le comportement 
+                        par défaut du navigateur.</li>
+                    <li>_blank : dans une nouvelle fenêtre - onglet du navigateur</li>
+                    <li>_parent : si on utilise des cadres, la ressource est ouverte 
+                        dans le cadre parent direct.</li>
+                    <li>_top : si on utilise des cadres, la ressource est ouverte dans 
+                        le cadre parent le plus haut</li>
+                </ul>
+            </main>
+        </article>
+        <article>
+            <header>
+                <h1>Les différents type de liens</h1>
+            </header>
+            <main>
+                <p>
+                    <a href="./autre-page.html" target="_self">Liens vers une autre page 
+                        s'ouvrant dans le même cadre</a>
+                </p>
+                <p>
+                    <a href="./autre-page.html" target="_blank">Liens vers une autre page 
+                        s'ouvrant dans une nouvelle fenêtre / onglet</a>
+                </p>
+                <iframe id="frameExample" 
+                        title="Frame Example" 
+                        width="400" 
+                        height="350" 
+                        src="./autre-page.html"></iframe>
+
+                <p>
+                    <a href="http://google.com" target="_blank">Google</a>
+                </p>
+                <p>
+                    <a href="mailto:nduflot@dawan.fr">Envoyer un mail à Nicolas Duflot</a>
+                </p>
+                <p>
+                    <a href="tel:+612345678">+612345678 (Appeler)</a>
+                </p>
+                <p>
+                    <a href="../images/SheRa-Netflix-2--673x1024.jpg" target="_blank">
+                        She-ra saison 2 sur Netflix
+                    </a>
+                </p>
+
+                <a href="../documents/CRAM.pdf" target="_blank">
+                    <img src="../images/thumb-cram.png" title="miniature feuille pdf" 
+                    alt="miniature feuille pdf" 
+                    width="93" height="123" />
+                </a>
+                <p>
+                    <a href="../documents/texte.txt" target="_blank">Texte en .txt</a>
+                </p>
+                <p>
+                    <a href="#attributs">Revenir aux attributs des liens</a>
+                </p>
+                <p>
+                    <a href="../intro/media.html">Les media</a>.
+                </p>
+            </main>
+        </article>
+        <aside>
+            <h3>En attendant</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi cumque obcaecati assumenda deleniti necessitatibus 
+                dolores voluptates? Consectetur velit qui, dolore aliquam 
+                cum quisquam quaerat odit iusto laboriosam perspiciatis cumque alias!
+            </p>
+        </aside>
+    </main>
+    <footer>
+        <section>
+            <h4>Liens utiles</h4>
+            <ul>
+                <li><a href="#">Qui sommes-nous</a></li>
+                <li><a href="#">CGU</a></li>
+                <li><a href="#">F.A.Q.</a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>Site Map</h4>
+            <ul>
+                <li>
+                    <a href="./intro/index.html">Introduction</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
