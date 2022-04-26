@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Arkham_reg';
+    src: url('../fonts/Arkham_reg.eot');
+    src: url('../fonts/Arkham_reg.eot') format('embedded-opentype'),
+         url('../fonts/Arkham_reg.woff2') format('woff2'),
+         url('../fonts/Arkham_reg.woff') format('woff'),
+         url('../fonts/Arkham_reg.ttf') format('truetype'),
+         url('../fonts/Arkham_reg.svg#Arkham_reg') format('svg');
+}
