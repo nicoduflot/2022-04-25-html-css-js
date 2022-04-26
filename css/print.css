@@ -1,0 +1,3 @@
+body > header, body > nav, body > footer{
+    display: none;
+}
